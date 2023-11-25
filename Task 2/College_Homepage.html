@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html">Edu<span>xyz</span></a>
+                <div class="nav-links" id="navlinks">
+                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Department</a></li>
+                        <li><a href="">Faculty</a></li>
+                        <li><a href="">Research</a></li>
+                        <li><a href="">Placement</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Sinhgad Engineering College</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum id amet numquam veniam. Aspernatur cumque voluptas ducimus pariatur cupiditate id aperiam, dicta dolorem laborum eligendi, possimus debitis consectetur tempore blanditiis!</p>
+                <a href="">Addmission Criateria</a>
+                
+
+            </div>
+        </section>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+
+    </body>
+</html>
